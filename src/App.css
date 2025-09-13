@@ -1,0 +1,190 @@
+@font-face {
+  font-family: IBMPlexMono;
+  src: url(./assets/Fonts/IBMPlexMono-SemiBoldItalic.woff2);
+  font-weight: 400; /* Peso da fonte (400 = normal/regular) */
+  font-style: normal;
+}
+@font-face {
+  font-family: IBMPlexMono-Light;
+  src: url(./assets/Fonts/IBMPlexMono-Light.woff2);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  margin: 0rem;
+}
+a {
+  text-decoration: none;
+}
+strong {
+  font-size: 12rem;
+  font-family: IBMPlexMono;
+}
+button {
+  width: 100%;
+}
+label {
+  color: #1c1c1c;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+form {
+  margin-bottom: 5.5rem;
+}
+
+#site {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #f6f6f6;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.container {
+  align-content: center;
+}
+.container .input-field {
+  position: relative;
+  width: 100%;
+  height: 2.65rem;
+  margin: 3.5rem auto 2.25rem auto;
+}
+.input-field input {
+  width: 100%;
+  height: 50%;
+  outline: none;
+  border: 2px solid #d9d9d9;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  padding: 25px 40px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
+.input-field input:focus {
+  border: 2px solid #1c1c1c;
+}
+.input-field input::placeholder {
+  color: #d9d9d9;
+}
+.input-field .icon-lock {
+  position: absolute;
+  bottom: -0.95rem;
+  left: 0.85rem;
+  font-size: 1.1rem;
+}
+.input-field .icon-env {
+  position: absolute;
+  bottom: -1rem;
+  left: 0.8rem;
+  font-size: 1.18rem;
+}
+
+.container {
+  padding: 1rem 6rem 15rem 6rem;
+}
+.container #logo {
+  font-family: IBMPlexMono;
+  font-size: 5rem;
+  padding-bottom: 0.8rem;
+}
+
+.container .recall-forget {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.3rem;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+}
+.container .recall-forget label {
+  color: #1c1c1c;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.recall-forget a {
+  color: #1c1c1c;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+}
+.recall-forget a:hover {
+  background: #1c1c1c;
+  color: #f9f9f9;
+  text-decoration: underline;
+}
+
+#KYWF {
+  margin: 0rem;
+  background: #1c1c1c;
+  color: #f6f6f6;
+  align-content: center;
+}
+#KYWF span p {
+  padding-left: 5rem;
+  margin: 0rem;
+  width: 30rem;
+  font-size: 11rem;
+  font-family: IBMPlexMono-Light;
+  line-height: 12rem;
+  margin-bottom: 5rem;
+}
+
+.signup-link {
+  border-top: 0.15rem solid #d9d9d9;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.signup-link a {
+  color: #1c1c1c;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+}
+.signup-link a:hover {
+  background: #1c1c1c;
+  color: #f9f9f9;
+  text-decoration: underline;
+}
+.container button {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 0.8rem;
+  background: #1c1c1c;
+  color: #f6f6f6;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1882px) {
+  #KYWF span p {
+    font-size: 9rem;
+  }
+  strong {
+    font-size: 10rem;
+  }
+}
+@media (max-width: 1508px) {
+  #KYWF span p {
+    font-size: 6rem;
+    line-height: 8rem;
+  }
+  strong {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 1130px) {
+  #KYWF {
+    display: none;
+  }
+  #site {
+    display: flex;
+    justify-content: center;
+  }
+}
